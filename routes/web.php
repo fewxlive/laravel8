@@ -99,3 +99,7 @@ Route::get('/staff/{id}',[ staffController::class,'show' ]);
 Route::get("/staff/{id}/edit", [ staffController::class , "edit" ]);
 Route::patch("/staff/{id}", [ staffController::class , "update" ]);
 Route::delete('/staff/{id}', [ staffController::class , 'destroy' ]);
+
+//Route::resource('post', 'PostController');
+use App\Http\Controllers\PostController;
+Route::resource('post', PostController::class);
