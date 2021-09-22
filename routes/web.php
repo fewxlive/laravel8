@@ -130,3 +130,18 @@ Route::resource('profile', ProfileController::class);
 Route::resource('user', UserController::class);
 Route::resource('vehicle', VehicleController::class);
 
+
+//Route::resource('order', 'OrderController');
+//Route::resource('payment', 'PaymentController');
+//Route::resource('order-product', 'OrderProductController');
+//Route::resource('product', 'ProductController');
+
+use App\Http\Controllers\OrderController;  
+use App\Http\Controllers\PaymentController;  
+use App\Http\Controllers\OrderProductController;
+use App\Http\Controllers\ProductController;
+
+Route::resource('order', OrderController::class);
+Route::resource('payment', PaymentController::class);
+Route::resource('order-product', OrderProductController::class);
+Route::resource('product', ProductController::class);
